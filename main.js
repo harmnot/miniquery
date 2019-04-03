@@ -40,7 +40,7 @@ class EventDispatcher {
     let events = document.createEvent("Event");
     events.initEvent(nameEvent, true, true);
     let element = document.querySelector(query);
-    return element.dispatchEvent(events);
+    element.dispatchEvent(events);
   }
 }
 
